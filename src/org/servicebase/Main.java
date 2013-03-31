@@ -14,7 +14,7 @@ public class Main
       public void run() {
         try {
           Main.dbmanager = new DatabaseManager();
-          Main.dbmanager.createDatabase("serviceBase");
+          Main.dbmanager.createDatabase("serviceBaseNew");
           Main.dbmanager.connect();
           Main.dbmanager.createCustomersTable("customers");
           Main.dbmanager.createMachinesTable("machines");

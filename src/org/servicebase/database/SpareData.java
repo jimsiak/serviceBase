@@ -13,13 +13,13 @@ public class SpareData
 {
   private Map<String, String> data;
   public static final String[] fieldsLabels = { 
-    "Κωδικός", "Είδος", "Μονάδα Μέτρησης", "Ποσότητα" };
+    "Κωδικός", "Είδος", "Τιμή", "Ποσότητα" };
 
   public static final String[] fieldsTypes = { 
     "VARCHAR(30)", "VARCHAR(50)", "VARCHAR(20)", "VARCHAR(10)" };
 
   public static final String[] fieldsName = { 
-    "code", "type", "unit", "count" };
+    "code", "type", "price", "count" };
 
   public static final Component[] fieldsInputType = { 
     new JTextField(10), new JTextField(10), 

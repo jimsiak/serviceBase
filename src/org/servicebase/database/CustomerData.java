@@ -13,19 +13,19 @@ public class CustomerData
 {
   private Map<String, String> data;
   public static final String[] fieldsLabels = { 
-    "Κωδικός", "Επώμυμο", "Όνομα", "Τηλέφωνο1", 
-    "Τηλέφωνο2", "Κινητό", "Διεύθυνση", "Πόλη", 
-    "Τ.Κ.", "Επάγγελμα", "ΔΟΥ", "ΑΦΜ" };
+    "Ημερομηνία Κλήσης", "Επώμυμο", "Όνομα", "Διεύθυνση",
+    "Όροφος", "Τηλέφωνο1", "Τηλέφωνο2", "Κινητό", 
+    "Πόλη", "Κατάστημα Πώλησης" };
 
   public static final String[] fieldsTypes = { 
-    "VARCHAR(30)", "VARCHAR(50)", "VARCHAR(50)", "VARCHAR(15)", 
-    "VARCHAR(15)", "VARCHAR(15)", "VARCHAR(30)", "VARCHAR(30)", 
-    "VARCHAR(5)", "VARCHAR(30)", "VARCHAR(30)", "VARCHAR(20)" };
+    "VARCHAR(15)", "VARCHAR(50)", "VARCHAR(50)", "VARCHAR(50)", 
+    "VARCHAR(5)", "VARCHAR(15)", "VARCHAR(15)", "VARCHAR(15)", 
+    "VARCHAR(20)", "VARCHAR(30)"};
 
   public static final String[] fieldsName = { 
-    "code", "lastname", "firstname", "phone1", 
-    "phone2", "cellphone", "address", "town", 
-    "postal_code", "job", "doy", "afm" };
+    "calldate", "lastname", "firstname", "address",
+    "floor", "phone1", "phone2", "cellphone", 
+    "town", "sellstore"};
 
   public static final Component[] fieldsInputType = { 
     new JTextField(10), new JTextField(10), 

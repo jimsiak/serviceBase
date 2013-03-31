@@ -28,37 +28,43 @@ public class ServiceInputPanel extends JPanel
     int numPairs = labels.length;
 
     JLabel l = new JLabel(labels[0], 11);
-    l.setLabelFor(inputFields[0]);
-
-    GridBagConstraints c = new GridBagConstraints();
-    c.gridx = 0; c.gridy = 0;
-    c.gridheight = 1; c.gridwidth = 1;
-    c.insets = new Insets(0, 0, 0, 3);
-    add(l, c);
-
-    c = new GridBagConstraints();
-    c.gridx = 1; c.gridy = 0;
-    c.gridheight = 1; c.gridwidth = 1;
-    add(inputFields[0], c);
-
-    l = new JLabel(labels[1], 11);
-    JTextArea desc = (JTextArea)inputFields[1];
+    JTextArea desc = (JTextArea)inputFields[0];
     desc.setColumns(8);
-    desc.setRows(8);
+    desc.setRows(3);
     desc.setLineWrap(true);
     desc.setWrapStyleWord(true);
     JScrollPane scroll = new JScrollPane(desc);
     l.setLabelFor(scroll);
 
-    c = new GridBagConstraints();
-    c.gridx = 0; c.gridy = 1;
+    GridBagConstraints c = new GridBagConstraints();
+    c.gridx = 0; c.gridy = 0;
     c.gridheight = 1; c.gridwidth = 1;
     c.anchor = 23;
     add(l, c);
 
     c = new GridBagConstraints();
-    c.gridx = 1; c.gridy = 1;
+    c.gridx = 1; c.gridy = 0;
+    c.gridheight = 2; c.gridwidth = 2;
+    add(scroll, c);
+    
+    l = new JLabel(labels[1], 11);
+    desc = (JTextArea)inputFields[1];
+    desc.setColumns(8);
+    desc.setRows(3);
+    desc.setLineWrap(true);
+    desc.setWrapStyleWord(true);
+    scroll = new JScrollPane(desc);
+    l.setLabelFor(scroll);
+
+    c = new GridBagConstraints();
+    c.gridx = 0; c.gridy = 2;
     c.gridheight = 1; c.gridwidth = 1;
+    c.anchor = 23;
+    add(l, c);
+
+    c = new GridBagConstraints();
+    c.gridx = 1; c.gridy = 2;
+    c.gridheight = 2; c.gridwidth = 2;
     add(scroll, c);
   }
 

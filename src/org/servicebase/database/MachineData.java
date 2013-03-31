@@ -13,18 +13,23 @@ public class MachineData
 {
   private Map<String, String> data;
   public static final String[] fieldsLabels = { 
-    "Μοντέλο", "S/N", "Αρ. Κατ.", "Αποδ. Αγοράς", "Ημερ. Αγοράς" };
+    "Μάρκα", "Μοντέλο", "S/N", "Version", 
+    "art number", "code", "ENR", "PNC", 
+    "Ημερομηνία Αγοράς" };
 
   public static final String[] fieldsTypes = { 
-    "VARCHAR(50)", "VARCHAR(20)", "VARCHAR(10)", "VARCHAR(20)", 
-    "VARCHAR(20)" };
+	"VARCHAR(50)", "VARCHAR(50)", "VARCHAR(20)", "VARCHAR(10)", 
+	"VARCHAR(20)", "VARCHAR(20)", "VARCHAR(20)", "VARCHAR(20)", 
+	"VARCHAR(20)"};
 
   public static final String[] fieldsName = { 
-    "model", "serial_num", "categoryNo", "receipt", "buyDate" };
+    "brand", "model", "serial_num", "version", 
+    "art_no", "code", "enr", "pnc", 
+    "buyDate" };
 
   public static final Component[] fieldsInputType = { 
-    new JTextField(10), new JTextField(10), 
-    new JTextField(10), new JTextField(10), 
+    new JTextField(10), new JTextField(10), new JTextField(10), new JTextField(10), 
+    new JTextField(10), new JTextField(10), new JTextField(10), new JTextField(10),  
     new JTextField(10) };
 
   public MachineData()

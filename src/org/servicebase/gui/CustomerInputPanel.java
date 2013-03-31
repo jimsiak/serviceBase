@@ -43,7 +43,7 @@ public class CustomerInputPanel extends JPanel
 
     numPairs += 2;
 
-    setLayout(new GridLayout(numPairs / 2, 4, 4, 4));
+    setLayout(new GridLayout(numPairs, 2, 4, 4));
   }
 
   public Customer getSpecifiedCustomer()

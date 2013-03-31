@@ -14,16 +14,16 @@ public class ServiceData
 {
   private Map<String, String> data;
   public static final String[] fieldsLabels = { 
-    "Ημερομηνία", "Περιγραφή" };
+    "Περιγραφή Βλάβης", "Περιγραφή Επισκευής" };
 
   public static final String[] fieldsTypes = { 
-    "VARCHAR(20)", "VARCHAR(200)" };
+    "VARCHAR(200)", "VARCHAR(200)" };
 
   public static final String[] fieldsName = { 
-    "date", "description" };
+    "damage_description", "service_description" };
 
   public static final Component[] fieldsInputType = { 
-    new JTextField(10), new JTextArea() };
+    new JTextArea(), new JTextArea() };
 
   public ServiceData()
   {
